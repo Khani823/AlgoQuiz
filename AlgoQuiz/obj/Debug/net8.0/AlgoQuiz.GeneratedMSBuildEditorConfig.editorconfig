@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = AlgoQuiz
-build_property.ProjectDir = C:\Users\limdh\OneDrive\바탕 화면\코딩\AlgoQuiz\AlgoQuiz\
+build_property.ProjectDir = C:\GitHub\AlgoQuiz\AlgoQuiz\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

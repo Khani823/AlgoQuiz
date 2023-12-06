@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\limdh\\OneDrive\\바탕 화면\\코딩\\AlgoQuiz\\AlgoQuiz\\AlgoQuiz.csproj",
+      "projectUniqueName": "C:\\GitHub\\AlgoQuiz\\AlgoQuiz\\AlgoQuiz.csproj",
       "projectName": "AlgoQuiz",
-      "projectPath": "C:\\Users\\limdh\\OneDrive\\바탕 화면\\코딩\\AlgoQuiz\\AlgoQuiz\\AlgoQuiz.csproj",
+      "projectPath": "C:\\GitHub\\AlgoQuiz\\AlgoQuiz\\AlgoQuiz.csproj",
       "packagesPath": "C:\\Users\\limdh\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\limdh\\OneDrive\\바탕 화면\\코딩\\AlgoQuiz\\AlgoQuiz\\obj\\",
+      "outputPath": "C:\\GitHub\\AlgoQuiz\\AlgoQuiz\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\limdh\\AppData\\Roaming\\NuGet\\NuGet.Config",
