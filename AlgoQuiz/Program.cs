@@ -2,6 +2,28 @@
 {
     internal class Program
     {
+
+        // 17. 자연수 뒤집어 배열로 만들기
+        public int[] solution17(long n)
+        {
+            string temp = n.ToString();
+            int[] answer = new int[temp.Length];
+            for (int i = 0; i < temp.Length; i++)
+            {
+                answer[i] = int.Parse(temp[i].ToString());
+            }
+            Array.Reverse(answer);
+            return answer;
+        }
+
+        //18. 문자열을 정수로 바꾸기
+        public int solution18(string s)
+        {
+            int answer = 0;
+            answer = int.Parse(s);
+            return answer;
+        }
+
         // 21. 하샤드의 수
         public bool solution21(int x)
         {
