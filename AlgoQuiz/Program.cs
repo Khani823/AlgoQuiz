@@ -133,7 +133,24 @@
             return answer;
         }
 
-    static void Main(string[] args)
+        // 24. 서울에서 김서방 찾기
+        public string solution24(string[] seoul)
+        {
+            string answer = "";
+            //반복문을 이용하여 문자열 중 "Kim"이 있는지 확인
+            for (int i = 0; i < seoul.Length; i++)
+            {
+                //만약 해당 문자열이 "Kim" 이면 i 번째에 있는 것.
+                if (seoul[i] == "Kim")
+                {
+                    answer = "김서방은 " + i + "에 있다";
+                    break;
+                }
+            }
+            return answer;
+        }
+
+        static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
         }
