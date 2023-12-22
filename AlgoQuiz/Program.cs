@@ -150,6 +150,26 @@
             return answer;
         }
 
+        // 25. 나누어 떨어지는 숫자 배열
+        public int[] solution25(int[] arr, int divisor)
+        {
+            List<int> result = new List<int>();
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                if (arr[i] % divisor == 0)
+                    result.Add(arr[i]);
+            }
+
+            if (result.Count == 0)
+            {
+                return new int[] { -1 };
+            }
+            result.Sort();
+
+            return result.ToArray();
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
