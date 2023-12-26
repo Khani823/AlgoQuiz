@@ -170,6 +170,40 @@
             return result.ToArray();
         }
 
+        // 26. 음양 더하기
+        public int solution26(int[] absolutes, bool[] signs)
+        {
+            int answer = 0;
+
+            for (int i = 0; i < absolutes.Length; i++)
+            {
+                // answer에 absolutes원소들을 더해주는데 각 원소는
+                // signs[i]의 참거짓에 따라서, 그냥 더해지거나 -1을 곱해서 음수로 더해짐
+                answer += absolutes[i] = signs[i] ? absolutes[i] : absolutes[i] * -1;
+            }
+
+            return answer;
+        }
+
+        // 27. 핸드포 번호 가리기
+        public string solution27(string phone_number)
+        {
+            string answer = "";
+            for (int i = 0; i < phone_number.Length; i++)
+            {
+                //문자열 폰넘버의 길이가 11 -4 = 7 즉, 0~7까지는 *로 가려준다. 
+                if (i < phone_number.Length - 4)
+                {
+                    answer += "*";
+                }
+                // 그 외 8~11까지는 번호를 표기해준다.
+                else
+                {
+                    answer += phone_number[i];
+                }
+            }
+            return answer;
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
