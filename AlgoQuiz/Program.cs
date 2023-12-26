@@ -204,6 +204,20 @@
             }
             return answer;
         }
+
+        // 없는 숫자 더하기
+        public class Solution28
+        {
+            public int solution(int[] numbers)
+            {
+                int answer = 45;
+                foreach (int number in numbers)
+                {
+                    answer -= number;
+                }
+                return answer;
+            }
+        }
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
