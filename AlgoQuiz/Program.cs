@@ -205,7 +205,7 @@
             return answer;
         }
 
-        // 없는 숫자 더하기
+        //28. 없는 숫자 더하기
         public class Solution28
         {
             public int solution(int[] numbers)
@@ -216,6 +216,24 @@
                     answer -= number;
                 }
                 return answer;
+            }
+        }
+
+        //29. 제일 작은 수 더하기
+        public class Solution29
+        {
+            public int[] solution(int[] arr)
+            {
+                List<int> answer = new List<int>();
+                foreach (int num in arr)
+                    answer.Add(num);
+                int minValue = answer.Min();
+                answer.Remove(minValue);
+                if (answer.Count == 0)
+                {
+                    answer.Add(-1);
+                }
+                return answer.ToArray();
             }
         }
         static void Main(string[] args)
