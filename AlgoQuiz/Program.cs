@@ -206,36 +206,63 @@
         }
 
         //28. 없는 숫자 더하기
-        public class Solution28
+        
+        public int solution28(int[] numbers)
         {
-            public int solution(int[] numbers)
+            int answer = 45;
+            foreach (int number in numbers)
             {
-                int answer = 45;
-                foreach (int number in numbers)
-                {
-                    answer -= number;
-                }
-                return answer;
+                answer -= number;
             }
+            return answer;
         }
 
+
         //29. 제일 작은 수 더하기
-        public class Solution29
+        
+        public int[] solution29(int[] arr)
         {
-            public int[] solution(int[] arr)
+            List<int> answer = new List<int>();
+            foreach (int num in arr)
+                answer.Add(num);
+            int minValue = answer.Min();
+            answer.Remove(minValue);
+            if (answer.Count == 0)
             {
-                List<int> answer = new List<int>();
-                foreach (int num in arr)
-                    answer.Add(num);
-                int minValue = answer.Min();
-                answer.Remove(minValue);
-                if (answer.Count == 0)
-                {
-                    answer.Add(-1);
-                }
-                return answer.ToArray();
+                answer.Add(-1);
             }
+            return answer.ToArray();
         }
+
+        // 30.가운데 글자 가져오기
+        public string solution30(string s)
+        {
+            string answer = "";
+            // 짝수인경우 - 문자열 길이의 절반과 -1까지, 2개가 중간글자
+            if (s.Length % 2 == 0)
+            {
+                // 각 글자를 더해줌
+                answer += s[s.Length / 2 - 1];
+                answer += s[s.Length / 2];
+            }
+            else
+            { // 홀수는 문자열길이의 절반이 중간글자
+                answer += s[s.Length / 2];
+            }
+            return answer;
+        }
+
+        // 31. 수박수박수박수박수박수?
+        public string solution31(int n)
+        {
+            string answer = "";
+            for (int i = 0; i < n; i++)
+            {
+                answer += i % 2 == 0 ? "수" : "박";
+            }
+            return answer;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
