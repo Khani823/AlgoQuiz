@@ -274,6 +274,24 @@
             return answer;
         }
 
+        // 34. 문자열 내림차순으로 배치하기
+        public string solution(string s)
+        {
+            string answer = "";
+
+            // 문자열을 각각의 단일문자들로 저장
+            char[] byte_arr = s.ToCharArray();
+
+            // 배열을 내림차순으로 만듬 (정렬 후 역순)
+            Array.Sort(byte_arr);
+            Array.Reverse(byte_arr);
+
+            // 단일문자 배열을 다시 문자열로 재구성
+            answer = new string(byte_arr);
+
+            return answer;
+        }
+
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
