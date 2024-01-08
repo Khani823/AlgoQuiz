@@ -292,7 +292,19 @@
             return answer;
         }
 
-        static void Main(string[] args)
+        // 35. 부족한 금액 계산하기
+        public long solution35(int price, int money, int count)
+        {
+            long total = 0;
+            for (int i = 1; i <= count; i++)
+            {
+                total += i * price; // n번 탑승한 가격의 합
+            }
+            return (total - money) > 0 ? total - money : 0;
+        }
+    }
+
+    static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
         }
